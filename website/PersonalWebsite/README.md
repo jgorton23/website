@@ -1,6 +1,6 @@
-# PersonalWebsite
+# Personal Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0 and Bootstrap version 5.1.3
 
 ## Development server
 
