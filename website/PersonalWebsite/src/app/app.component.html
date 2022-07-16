@@ -1,24 +1,26 @@
-<div class="sticky-top navbar navbar-light">
-  <div class="container row">
-    <!-- <app-header class="col"></app-header> -->
-    <nav class="navbar">
-      <!-- <a href="#" class="navbar-brand">Jacob Gorton</a> -->
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link active" href="#personal-info">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-      </ul>
-    </nav>
+<!-- <div class="sticky-top"> -->
+<!-- <div class="container row"> -->
+<!-- <app-header class="col"></app-header> -->
+<nav id="app-nav" class="navbar navbar-light fixed-top">
+  <!-- <a href="#" class="navbar-brand">Jacob Gorton</a> -->
+  <div class="rounded p-2" style="background-color: lightblue">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#personal-info">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#experience">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
+<!-- </div> -->
+<!-- </div> -->
 <div class="container">
-  <div class="row" data-spy="scroll" data-offset="0">
+  <div class="row" data-spy="scroll" data-target="#app-nav" data-offset="0">
     <div class="col">
       <app-personal-info id="personal-info"></app-personal-info>
       <app-experience id="experience"></app-experience>

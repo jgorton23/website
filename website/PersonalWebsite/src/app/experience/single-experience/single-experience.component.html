@@ -2,17 +2,14 @@
   <hr />
   <div class="col-4" style="text-align: right">
     <p>
-      Company Name, Possibly Bold <br />
-      Job Title for my position <br />
-      Timespan I worked
+      <strong>{{ companyName }} </strong><br />
+      {{ jobTitle }} <br />
+      {{ getWorkRangeString() }}
     </p>
   </div>
   <div class="col-8">
     <p>
-      this is a description of a job or experience that I have, it can cover
-      multiple lines and strethes most of the page on my website, it should be
-      to the right of a text block containing the company name, my title, and
-      the dates I worked
+      {{ desc }}
     </p>
   </div>
 </div>

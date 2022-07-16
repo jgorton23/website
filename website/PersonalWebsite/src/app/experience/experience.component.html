@@ -3,7 +3,14 @@
   <div class="row">
     <div class="display-1" style="text-align: center">Experience</div>
   </div>
-  <app-single-experience></app-single-experience>
-  <app-single-experience></app-single-experience>
-  <app-single-experience></app-single-experience>
+  <app-single-experience
+    *ngFor="let experience of experiences"
+    [jobTitle]="experience.jobTitle"
+    [companyName]="experience.companyName"
+    [desc]="experience.description"
+    [start]="experience.start"
+    [end]="experience.end"
+  ></app-single-experience>
+  <!-- <app-single-experience></app-single-experience> -->
+  <!-- <app-single-experience></app-single-experience> -->
 </div>
