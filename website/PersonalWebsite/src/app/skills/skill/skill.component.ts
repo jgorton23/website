@@ -9,7 +9,12 @@ export class SkillComponent implements OnInit {
 
   constructor() { }
 
+  showDetails: boolean = false;
+
   ngOnInit(): void {
   }
 
+  onClick(){
+    this.showDetails = !this.showDetails;
+  }
 }
