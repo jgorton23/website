@@ -1,19 +1,20 @@
 <div
-  class="row shadow rounded m-3 me-2 ms-2 pt-2 pb-2 d-flex justify-content-between align-items-center"
+  class="shadow rounded m-3 me-2 ms-2 pt-2 pb-2 d-flex flex-row justify-content-between align-items-center"
   style="padding-left: 200px; padding-right: 200px"
 >
-  <ng-content></ng-content>
+  <div>
+    <ng-content></ng-content>
+  </div>
   <div>
     <img
-      *ngFor="let _ of [].constructor(level ? level : 0)"
       src="../../../assets/goldStar.png"
       alt="star"
       style="max-height: 1em; max-width: 2.5em"
     />
     <img
-      *ngFor="let _ of [].constructor(level ? 5 - level : 5)"
+      *ngFor="let _; in: [].constructor(level ? 5 - level : 5)"
       src="../../../assets/grayStar.png"
-      alt="grayStar"
+      alt="star"
       style="max-height: 1em; max-width: 2.5em"
     />
   </div>
