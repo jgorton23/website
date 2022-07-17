@@ -4,23 +4,14 @@
   </div>
   <div class="row">
     <div class="col-6">
-      <app-skill>Java</app-skill>
-      <app-skill>Python</app-skill>
-      <app-skill>SQL</app-skill>
-      <app-skill>C/C++</app-skill>
-      <app-skill>REST APIs</app-skill>
-      <app-skill>Docker</app-skill>
-      <app-skill>AWS Lambda</app-skill>
-      <app-skill>Git</app-skill>
+      <app-skill *ngFor="let skill of skillsColOne">{{
+        skill.skillName
+      }}</app-skill>
     </div>
     <div class="col-6">
-      <app-skill>JavaScript</app-skill>
-      <app-skill>HTML</app-skill>
-      <app-skill>CSS</app-skill>
-      <app-skill>C/C++</app-skill>
-      <app-skill>Angular</app-skill>
-      <app-skill>React Native</app-skill>
-      <app-skill>React.js</app-skill>
+      <app-skill *ngFor="let skill of skillsColTwo">{{
+        skill.skillName
+      }}</app-skill>
     </div>
   </div>
 </div>
