@@ -7,12 +7,13 @@
   </div>
   <div>
     <img
+      *ngFor="let _ of [].constructor(level ? level : 0)"
       src="../../../assets/goldStar.png"
       alt="star"
       style="max-height: 1em; max-width: 2.5em"
     />
     <img
-      *ngFor="let _; in: [].constructor(level ? 5 - level : 5)"
+      *ngFor="let _ of [].constructor(level ? 5 - level : 5)"
       src="../../../assets/grayStar.png"
       alt="star"
       style="max-height: 1em; max-width: 2.5em"
